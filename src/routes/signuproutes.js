@@ -11,13 +11,13 @@ function router(navindex,nav)
     })
     signuprouter.post("/signupsubmit",function(req,res){
         var item={
-        email:req.body.email,
-        phonenumber:req.body.phonenumber,
-        password:req.body.password
+        email:req.body.user.email,
+        phonenumber:req.body.user.phonenumber,
+        password:req.body.user.password
     }
         var user=userdata(item)
         user.save();
-        res.redirect('/login')
+        
     })
     return signuprouter;
 
