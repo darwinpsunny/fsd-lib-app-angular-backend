@@ -20,9 +20,9 @@ function router(nav){
                               var oldbooks=author.books
                               var oldgenre=author.genre
                               var oldimage=author.image
-                              var olddetails=author.details
+                              var olddetails=author.about
                               var newname=body.name
-                              var newdetails=body.details
+                              var newdetails=body.about
                               
                               var newgenre=body.genre
                               var newimage=body.image
