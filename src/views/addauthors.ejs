@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="utf-8">
+    <title><%=title%></title>
+    
+		<meta name="generator" content="Bootply" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1">
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.1/dist/umd/popper.min.js" integrity="sha384-9/reFTGAW83EW2RDu2S0VKaIzap3H66lZH81PoYlFhbGU+6BZp6G7niu735Sk7lN" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/js/bootstrap.min.js" integrity="sha384-w1Q4orYjBQndcko6MimVbzY0tgp4pWB4lZ7lr30WKz0vr/aWKhXdBNmNb5D92v7s" crossorigin="anonymous"></script>
+     -->
+    <link rel="stylesheet" href="/css/signupstyles.css">
+    <link href="/css/bootstrap.min.css" rel="stylesheet">
+    <link defer href="https://unpkg.com/filepond/dist/filepond.css" rel="stylesheet">
+		<link href="//netdna.bootstrapcdn.com/font-awesome/3.2.1/css/font-awesome.min.css" rel="stylesheet">
+		<!--[if lt IE 9]>
+			<script src="//html5shim.googlecode.com/svn/trunk/html5.js"></script>
+		<![endif]-->
+  <link href="/css/styles.css" rel="stylesheet">
+  <!-- add before </body> -->
+<script defer src="https://unpkg.com/filepond-plugin-file-encode/dist/filepond-plugin-file-encode.js"></script>
+  <script defer src="https://unpkg.com/filepond/dist/filepond.js"></script>
+<script>
+ FilePond.registerPlugin(FilePondPluginFileEncode);
+  FilePond.parse(document.body)
+</script>
+  </head>
+        
+    
+   
+	<body>
+    <header class="navbar navbar-bright navbar-fixed-top" role="banner">
+      <div class="container">
+        <div class="navbar-header">
+          <button class="navbar-toggle" type="button" data-toggle="collapse" data-target=".navbar-collapse">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a href="/home" class="navbar-brand">Home</a>
+        </div>
+        <nav class="collapse navbar-collapse" role="navigation">
+          <ul class="nav navbar-nav">
+              <%for(i=0;i<nav.length;i++){%>
+            <li>
+              <a href="<%=nav[i].link%>"><%=nav[i].name%></a>
+            </li>
+            <%}%>
+        
+      </ul>
+      <ul class="nav navbar-right navbar-nav">
+        <li >
+         <a href="/login">log out</a>
+        </li>
+      </ul>
+    </nav>
+  </div>
+</header>
+
+<div id="masthead">  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-7">
+        <h1>books
+          <p class="lead"></p>
+        </h1>
+      </div>
+      <div class="col-md-5">
+        <div class="well well-lg"> 
+          <div class="row">
+            <div class="col-sm-12">
+              
+			
+            </div>
+          </div>
+        </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+  <div class="container">
+    <div class="row">
+      <div class="col-md-12">
+        <div class="top-spacer"> </div>
+      </div>
+    </div> 
+  </div><!-- /cont -->
+  
+</div>
+
+
+<div class="container">
+  <div class="row">
+    
+    <div class="col-md-12"> 
+      
+      <div class="panel">
+        <div class="panel-body">
+          
+          
+          
+          <!--/stories-->
+         
+         
+          <center> <div class="signupbox"> 
+            <form class="form" method="POST" action="/addauthors/add"  enctype="multipart/form-data"  >
+              <h2>Add author</h2><br>
+              
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="exampleInputEmail1">Author name</label>
+                <input type="text" class="form-control" id="Email" name="name"   placeholder="Enter name of the author">
+                
+              </div><br>
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="exampleInputEmail1">Author genre</label>
+                <input type="text" class="form-control" id="number" name="genre" placeholder="Enter the genre of author">
+                <small id="numberhelp" class="form-text text-muted"></small>
+              </div><br>
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="exampleInputEmail1">Books written</label>
+                <input type="text" class="form-control" id="number" name="books" placeholder="Enter the books written ">
+                <small id="numberhelp" class="form-text text-muted"></small>
+              </div><br>
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="exampleInputEmail1">About</label>
+                <input type="textarea" class="form-control" id="number" name="about" placeholder="Enter  any details about author ">
+                <small id="numberhelp" class="form-text text-muted"></small>
+              </div><br>
+              
+              <div class="form-group mx-sm-3 mb-2">
+                <label for="exampleInputPassword1">Photo of author</label>
+                <input type="file" class="form-control" name="image" id="bkimg"  placeholder="">
+                
+              </div><br>
+             
+              <button type="submit" class=" btn btn-primary">ADD</button>
+            </form>
+          </div></center>
+          <br>
+          <script src="js/form.js"></script>
+        
+          <!--/stories-->
+          
+          
+          <a href="/" class="btn btn-primary pull-right btnNext">More <i class="glyphicon glyphicon-chevron-right"></i></a>
+        
+          
+        </div>
+      </div>
+                                                                                       
+	                                                
+                                                      
+   	</div><!--/col-12-->
+  </div>
+</div>
+                                                
+                                                                                
+<hr>
+
+<div class="container" id="footer">
+  <div class="row">
+    <div class="col col-sm-12">
+      
+      <h1>Follow Us</h1>
+      <div class="btn-group">
+       <a class="btn btn-twitter btn-lg" href="#"><i class="icon-twitter icon-large"></i> Twitter</a>
+	   <a class="btn btn-facebook btn-lg" href="#"><i class="icon-facebook icon-large"></i> Facebook</a>
+	   <a class="btn btn-google-plus btn-lg" href="#"><i class="icon-google-plus icon-large"></i> Google+</a>
+      </div>
+      
+    </div>
+  </div>
+</div>
+
+<hr>
+
+<hr>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-6">
+        <ul class="list-inline">
+          <li><i class="icon-facebook icon-2x"></i></li>
+          <li><i class="icon-twitter icon-2x"></i></li>
+          <li><i class="icon-google-plus icon-2x"></i></li>
+          <li><i class="icon-pinterest icon-2x"></i></li>
+        </ul>
+        
+      </div>
+      <div class="col-sm-6">
+          <p class="pull-right">Built with <i class="icon-heart-empty"></i> at <a href="http://www.bootply.com">Bootply</a></p>      
+      </div>
+    </div>
+  </div>
+</footer>
+	<!-- script references -->
+		<script src="//ajax.googleapis.com/ajax/libs/jquery/2.0.2/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+	</body>
+</html>

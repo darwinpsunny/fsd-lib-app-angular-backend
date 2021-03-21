@@ -1,0 +1,107 @@
+.container{padding: auto;
+margin: auto;}
+body{
+    background-image: url("/kerala tourism page/imgs/1635314.jpg");
+    padding: 0;
+    margin: 0;
+}
+
+.navbar img{
+    float: left;
+    width:130px;
+    height: 80px;
+    border-radius: 90%;
+}
+#carouselExampleControls{
+    
+    margin-right: 1%;
+    margin-left: 1%;
+    width: auto;
+    box-shadow: -6px -6px 10px rgba(22, 4, 13, 0.151),6px 6px 10px rgba(15, 15, 15, 0.6);
+}
+.welcomeportion{
+    width: max-content;
+    background-color: honeydew;
+}
+.welcomefont{
+    
+    width: fit-content;
+    height: auto;
+    margin: auto;
+text-align: center;
+    font-size: 2em;
+   font-family: Apple Chancery, cursive;
+    font-weight: 600;
+    
+    color: rgb(22, 107, 218);
+    padding: 20px;
+}
+.mainportion{
+    width: 92%;
+    margin-left: auto;
+    margin-right: auto;
+    border-radius: 4px;
+}
+.horizontalimg
+{
+    box-shadow: -6px -6px 10px rgba(22, 4, 13, 0.151),6px 6px 10px rgba(15, 15, 15, 0.6);
+    border-radius: 3px;
+}
+.textcenter{
+    margin: auto;
+    margin-top: 5%;
+}
+img{
+    width:100%;
+}
+.secondportion{
+    
+    background-color:  #f6f8fb;
+    
+    margin-left: 5%;
+    margin-right: 5%;
+    padding-left: 1%;
+    padding-right: 4%;
+    height: 120%;
+    width: auto;
+}
+.states{
+    width: 330px;
+    height: 134px;
+    margin-top:10% ;
+    margin-left: 5%;
+    margin-right: 5%;
+    margin-bottom: 60px;
+    padding-bottom: 10px;
+
+    text-align: center;
+    font-weight: 600;
+    
+    
+}
+.states a{
+    color: rgb(129, 53, 9);
+    text-align: center;
+}
+.states img{
+    
+    width: 230px;
+    height: 150px;
+    border-radius: 5px;
+    box-shadow: -6px -6px 10px rgba(22, 4, 13, 0.151),6px 6px 10px rgba(15, 15, 15, 0.6);
+}
+.footer{
+   
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    margin-top:10px ;
+    font-weight: 200;
+    border:  1px solid gray;
+    background-color: rgb(253, 250, 250);
+    border-top: 1px solid rgb(17, 182, 204);
+    box-shadow: rgba(0, 0, 0, 0.3) 0px -2px 5px;
+    color: rgb(0, 0, 0);
+    text-align: center;
+    padding: 10px;
+}

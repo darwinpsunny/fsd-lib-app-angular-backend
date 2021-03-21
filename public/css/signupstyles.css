@@ -1,0 +1,35 @@
+*{
+    padding: 0;
+    margin:0;
+}
+body{
+    background-image: none;
+    background-color: rgb(159, 163, 155) ;
+    
+}
+
+.signupbox{
+    border-radius: 10px;
+    margin-top: 15px;
+    background-color:white;
+    padding-top:40px ;
+    padding-bottom: 40px;
+    height :100%;
+    width :430px;
+    box-shadow: -6px -6px 10px rgba(10, 0, 5, 0.151),6px 6px 10px rgba(3, 0, 0, 0.6);
+    margin-top:100px
+}
+
+ .form input{
+    width: 70%;
+    height:100%;
+    columns: #1b42a5;
+    padding-top: 20px;
+    border:none;
+    border-bottom: 3px solid rgb(37, 97, 209);
+   
+
+}
+#failtologin{
+    color: rgb(185, 0, 0);
+}
