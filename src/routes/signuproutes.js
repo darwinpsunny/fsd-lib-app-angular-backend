@@ -10,6 +10,8 @@ function router(navindex,nav)
         });
     })
     signuprouter.post("/signupsubmit",function(req,res){
+        res.header("Access-Control-Allow-Orgin","*")
+        res.header("Access-Control-Allow-Methods,GET,POST,PATCH,PUT,DELETE,OPTIONS")
         var item={
         email:req.body.user.email,
         phonenumber:req.body.user.phonenumber,
